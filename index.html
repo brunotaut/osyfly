@@ -47,7 +47,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .hero-badge::before{content:'';width:44px;height:1px;background:var(--accent)}
 .blink{animation:blink 1.4s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.hero-title{position:relative;font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(54px,7.5vw,108px);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:36px;max-width:1150px}
+.hero-title{position:relative;font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(54px,7.5vw,76px);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:36px;max-width:1150px}
 .hero-title .yl{color:var(--accent)}
 .hero-title .dim{color:rgba(238,242,247,0.20)}
 .hero-desc{position:relative;font-size:17px;font-weight:300;color:var(--label);max-width:500px;margin-bottom:52px;line-height:1.8}
@@ -76,7 +76,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 
 /* ─── DOME ─── */
 .dome-sec{background:var(--bg);padding-top:55px}
-.dome-sec .sec-title{margin-top:-32px;margin-bottom:9px}
 .dome-inner{display:flex;flex-direction:column}
 .dome-status{display:inline-flex;align-items:center;gap:8px;font-family:'Inconsolata',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--label);border:1px solid var(--border2);padding:5px 14px;margin-bottom:30px}
 .dome-status .dot{width:6px;height:6px;border-radius:50%;background:#f5a623}
@@ -188,6 +187,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:40px 60px
 @keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 
 /* ─── RESPONSIVE ─── */
+@media(min-width:1100px){
+  .hero-title{margin-top:100px}
+}
+
 @media(max-width:1100px){
   nav,footer{padding-left:32px;padding-right:32px}
   .sec,.dome-sec .sec,.cta-sec{padding-left:32px;padding-right:32px}
